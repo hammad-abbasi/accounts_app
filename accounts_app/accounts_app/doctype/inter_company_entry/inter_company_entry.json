@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-08-07 00:10:22.990561",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "column_break_q6rvw",
+  "finance_book",
+  "posting_date",
+  "section_break_2nmjj",
+  "jv_table",
+  "section_break_vwkjb",
+  "cheque_no",
+  "cheque_date",
+  "user_remark",
+  "column_break_pugo1",
+  "total_debit",
+  "total_credit",
+  "difference",
+  "total_amount",
+  "remark",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": "INTCOM-JV-.YYYY.-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Inter Company Entry",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_q6rvw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "finance_book",
+   "fieldtype": "Link",
+   "label": "Finance Book",
+   "options": "Finance Book"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2nmjj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jv_table",
+   "fieldtype": "Table",
+   "label": "JV Table",
+   "options": "JV Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vwkjb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cheque_no",
+   "fieldtype": "Data",
+   "label": "Reference Number"
+  },
+  {
+   "fieldname": "cheque_date",
+   "fieldtype": "Date",
+   "label": "Reference Date"
+  },
+  {
+   "fieldname": "user_remark",
+   "fieldtype": "Data",
+   "label": "User Remark"
+  },
+  {
+   "fieldname": "column_break_pugo1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_debit",
+   "fieldtype": "Currency",
+   "label": "Total Debit",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "total_credit",
+   "fieldtype": "Currency",
+   "label": "Total Credit",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "difference",
+   "fieldtype": "Currency",
+   "label": "Difference (Dr - Cr)",
+   "options": "Company:company:default_currency"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "total_amount_currency"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-07 00:44:25.851754",
+ "modified_by": "Administrator",
+ "module": "Accounts App",
+ "name": "Inter Company Entry",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
