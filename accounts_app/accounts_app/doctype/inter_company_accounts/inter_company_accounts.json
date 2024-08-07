@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-08-07 13:38:35.877101",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "other_companies_accounts_section",
+  "banjer",
+  "sharq",
+  "anjad",
+  "column_break_qtujt",
+  "real_estate",
+  "holding_group",
+  "ruwad"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "INTCOM-ACC-.YYYY.-"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "other_companies_accounts_section",
+   "fieldtype": "Section Break",
+   "label": "Other Companies Accounts"
+  },
+  {
+   "fieldname": "banjer",
+   "fieldtype": "Link",
+   "label": "Banjer",
+   "options": "Account"
+  },
+  {
+   "fieldname": "sharq",
+   "fieldtype": "Link",
+   "label": "Sharq",
+   "options": "Account"
+  },
+  {
+   "fieldname": "anjad",
+   "fieldtype": "Link",
+   "label": "Anjad",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_qtujt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "real_estate",
+   "fieldtype": "Link",
+   "label": "Real Estate",
+   "options": "Account"
+  },
+  {
+   "fieldname": "holding_group",
+   "fieldtype": "Link",
+   "label": "Holding Group",
+   "options": "Account"
+  },
+  {
+   "fieldname": "ruwad",
+   "fieldtype": "Link",
+   "label": "Ruwad",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-07 13:38:35.877101",
+ "modified_by": "Administrator",
+ "module": "Accounts App",
+ "name": "Inter Company Accounts",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

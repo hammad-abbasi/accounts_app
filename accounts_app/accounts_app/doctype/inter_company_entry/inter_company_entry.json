@@ -105,26 +105,32 @@
   {
    "fieldname": "total_debit",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Debit",
-   "options": "Company:company:default_currency"
+   "options": "Company:company:default_currency",
+   "read_only": 1
   },
   {
    "fieldname": "total_credit",
    "fieldtype": "Currency",
+   "in_list_view": 1,
    "label": "Total Credit",
-   "options": "Company:company:default_currency"
+   "options": "Company:company:default_currency",
+   "read_only": 1
   },
   {
    "fieldname": "difference",
    "fieldtype": "Currency",
    "label": "Difference (Dr - Cr)",
-   "options": "Company:company:default_currency"
+   "options": "Company:company:default_currency",
+   "read_only": 1
   },
   {
    "fieldname": "total_amount",
    "fieldtype": "Currency",
    "label": "Total Amount",
-   "options": "total_amount_currency"
+   "options": "total_amount_currency",
+   "read_only": 1
   },
   {
    "fieldname": "remark",
@@ -135,7 +141,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-07 00:44:25.851754",
+ "modified": "2024-08-07 13:29:36.634585",
  "modified_by": "Administrator",
  "module": "Accounts App",
  "name": "Inter Company Entry",
